@@ -1,0 +1,15 @@
+.pagina {
+    padding: 60px 0;
+}
+
+.pagina h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pagina p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}

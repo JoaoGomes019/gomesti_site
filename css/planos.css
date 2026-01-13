@@ -1,0 +1,101 @@
+/* =========================
+   PÁGINA PLANOS
+========================= */
+.pagina {
+    padding: 120px 0;
+    background: radial-gradient(circle at top, #0c1f16, #05080c);
+}
+
+/* TÍTULO */
+.pagina h2 {
+    text-align: center;
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    letter-spacing: 4px;
+    margin-bottom: 70px;
+}
+
+/* GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* CARD */
+.card {
+    background: var(--panel-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 45px 35px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    position: relative;
+    transition: 0.4s ease;
+}
+
+/* GLOW */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--border-glow);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* DESTAQUE */
+.card.destaque {
+    box-shadow: 0 0 40px rgba(44,255,135,0.25);
+}
+
+/* TÍTULO DO PLANO */
+.card h3 {
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* LISTA */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.card li {
+    color: #cfd8dc;
+    margin: 14px 0;
+    font-size: 0.95rem;
+}
+
+/* BOTÃO */
+.btn-plano {
+    display: inline-block;
+    padding: 14px 34px;
+    background: linear-gradient(135deg, var(--neon-green), #1fae64);
+    color: #000;
+    font-family: var(--font-tech);
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 0 0 25px rgba(44, 255, 135, 0.5);
+    transition: 0.3s;
+    
+    position: relative;      /* garante posicionamento acima de elementos estáticos */
+    z-index: 10;             /* garante prioridade em relação a outros elementos */
+    pointer-events: auto;    /* garante que possa receber clique */
+    border-radius: 6px;      /* deixa o botão com cantos arredondados, opcional */
+}
+
+.btn-plano:hover {
+    filter: brightness(1.1);
+    cursor: pointer;         /* muda o cursor para indicar clicável */
+}

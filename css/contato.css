@@ -1,0 +1,108 @@
+/* =========================
+   PÁGINA CONTATO
+========================= */
+.pagina {
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #0c1f16, #05080c);
+}
+
+/* TÍTULO */
+.pagina h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: var(--font-tech);
+    letter-spacing: 3px;
+    color: var(--neon-green);
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 520px;
+    margin: auto;
+    background: var(--panel-bg);
+    padding: 40px;
+    border: 1px solid var(--border-glow);
+    backdrop-filter: blur(12px);
+}
+
+/* CAMPOS */
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: transparent;
+    color: var(--text-light);
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--neon-green);
+}
+
+/* TEXTAREA */
+form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+/* LGPD */
+.lgpd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.lgpd input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border-glow);
+    background: transparent;
+    cursor: pointer;
+}
+
+.lgpd input:checked {
+    background: var(--neon-green);
+    box-shadow: 0 0 10px rgba(44,255,135,0.8);
+}
+
+.lgpd a {
+    color: var(--neon-green);
+    text-decoration: none;
+}
+
+.lgpd a:hover {
+    text-decoration: underline;
+}
+
+/* BOTÃO */
+form button {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--neon-green), #1fae64);
+    color: #000;
+    border: none;
+    font-family: var(--font-tech);
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(44,255,135,0.5);
+    transition: 0.3s;
+}
+
+form button:hover {
+    filter: brightness(1.1);
+}

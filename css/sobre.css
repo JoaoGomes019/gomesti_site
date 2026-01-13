@@ -1,0 +1,90 @@
+/* =========================
+   PÁGINA SOBRE
+========================= */
+.pagina {
+    padding: 120px 0;
+    background: radial-gradient(circle at top, #0c1f16, #05080c);
+}
+
+/* TÍTULO */
+.pagina h2 {
+    text-align: center;
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #cfd8dc;
+    line-height: 1.8;
+}
+
+/* GRID */
+.valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+/* CARD */
+.valor {
+    background: var(--panel-bg);
+    padding: 45px 35px;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    position: relative;
+}
+
+/* GLOW */
+.valor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--border-glow);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.valor:hover::before {
+    opacity: 1;
+}
+
+/* TÍTULOS */
+.valor h3 {
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* TEXTO */
+.valor p {
+    color: #b0bec5;
+    line-height: 1.7;
+}
+
+/* LISTA */
+.valor ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valor li {
+    margin-bottom: 12px;
+    color: #cfd8dc;
+    position: relative;
+    padding-left: 18px;
+}
+
+.valor li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--neon-green);
+}

@@ -1,0 +1,72 @@
+.pagina {
+    padding: 80px 0;
+}
+
+.pagina h1 {
+    text-align: center;
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 60px;
+}
+
+.servico {
+    margin-bottom: 60px;
+    padding: 35px;
+    background: var(--panel-bg);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+}
+
+.servico h3 {
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    margin-bottom: 15px;
+}
+
+.servico ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.servico ul li {
+    margin-bottom: 8px;
+    color: #b0bec5;
+}
+
+.destaque-servicos {
+    margin-top: 100px;
+    padding: 50px;
+    border: 1px solid var(--border-glow);
+    text-align: center;
+}
+
+.destaque-servicos h3 {
+    font-family: var(--font-tech);
+    color: var(--neon-green);
+    margin-bottom: 30px;
+}
+
+.destaque-servicos ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.destaque-servicos ul li {
+    margin: 12px 0;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, var(--neon-green), #1fae64);
+    color: #000;
+    font-family: var(--font-tech);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
