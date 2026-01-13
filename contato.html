@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | GomesTI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <section class="pagina">
+        <div class="container">
+            <h2>Fale com a GomesTI</h2>
+            <form action="https://formspree.io/f/mvzzoley" method="POST" id="meu-formulario">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Descreva sua necessidade ou problema" required></textarea>
+            
+                <label class="lgpd">
+                    <input type="checkbox" name="aceitou_lgpd" required>
+                    <span>
+                        Concordo com a
+                        <a href="privacidade.html" target="_blank">Política de Privacidade</a>
+                    </span>
+                </label>
+            
+                <button type="submit">ENVIAR SOLICITAÇÃO</button>
+                
+                <div id="mensagem-status" style="margin-top: 20px; text-align: center; font-family: 'Rajdhani', sans-serif; font-weight: bold;"></div>
+            </form>
+        </div>
+    </section>
+    <footer><p>© 2026 GomesTI • <a href="privacidade.html">Política de Privacidade</a></p></footer>
+    <a class="whatsapp" href="https://wa.me/5519982585255" target="_blank">WhatsApp</a>
+    <script src="js/script.js"></script>
+</body>
+</html>
